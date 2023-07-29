@@ -14,6 +14,9 @@ public class ModItems {
         public static final RegistryObject<Item> BLACK_OPAL = ITEMS.register("black_opal",
                 () -> new Item(new Item.Properties()));
 
+        public static final RegistryObject<Item> RED_RUBY = ITEMS.register("red_ruby",
+                () -> new Item(new Item.Properties()));
+
         public static void register(IEventBus eventBus){
             ITEMS.register(eventBus);
 

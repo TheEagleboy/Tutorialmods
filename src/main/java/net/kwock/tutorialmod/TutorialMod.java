@@ -53,6 +53,7 @@ public class TutorialMod
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BLACK_OPAL);
+            event.accept(ModItems.RED_RUBY);
         }
     }
 
