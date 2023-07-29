@@ -1,6 +1,7 @@
 package net.kwock.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.kwock.tutorialmod.items.ModCreativeModeTabs;
 import net.kwock.tutorialmod.items.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -29,6 +30,7 @@ public class TutorialMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         // Register the commonSetup method for modloading
